@@ -11,30 +11,63 @@ class GameController extends Controller
         return [
             [
                 'id' => 1,
-                'title' => 'The Legend of Zelda: Breath of the Wild',
+                'title' => 'Animal Crossing: New Horizons',
                 'platform' => 'Nintendo Switch',
-                'genre' => 'Aventura',
-                'year' => 2017,
-                'description' => 'Un juego de mundo abierto donde Link explora Hyrule para derrotar a Calamity Ganon.',
-                'rating' => 9.5
+                'genre' => 'Simulación',
+                'year' => 2020,
+                'description' => 'Convierte tu isla desierta en un paraíso encantador. Colecciona muebles, decora tu casa y haz amigos con los aldeanos más adorables.',
+                'rating' => 9.2,
+                'image' => 'animal_crossing.jpg'
             ],
             [
                 'id' => 2,
-                'title' => 'God of War',
-                'platform' => 'PlayStation',
-                'genre' => 'Acción',
-                'year' => 2018,
-                'description' => 'Kratos y su hijo Atreus emprenden un viaje épico por los reinos nórdicos.',
-                'rating' => 9.3
+                'title' => 'Stardew Valley',
+                'platform' => 'Multi-plataforma',
+                'genre' => 'Simulación',
+                'year' => 2016,
+                'description' => 'Deja atrás la vida urbana y convierte la granja abandonada de tu abuelo en un lugar próspero. Haz amigos, encuentra amor y construye una comunidad.',
+                'rating' => 9.0,
+                'image' => 'stardew_valley.jpg'
             ],
             [
                 'id' => 3,
-                'title' => 'Hades',
+                'title' => 'My Time at Portia',
                 'platform' => 'Multi-plataforma',
-                'genre' => 'Roguelike',
+                'genre' => 'Simulación',
+                'year' => 2019,
+                'description' => 'Restaura el taller de tu padre en la encantadora ciudad de Portia. Cultiva tu granja, construye máquinas y forma relaciones profundas.',
+                'rating' => 8.5,
+                'image' => 'my_time_at_portia.jpg'
+            ],
+            [
+                'id' => 4,
+                'title' => 'Harvest Moon: One World',
+                'platform' => 'Multi-plataforma',
+                'genre' => 'Simulación',
+                'year' => 2021,
+                'description' => 'Viaja por diferentes países y cultiva tus granjas con estilos únicos. Conoce personajes entrañables y descubre secretos encantadores.',
+                'rating' => 7.8,
+                'image' => 'harvest_moon.jpg'
+            ],
+            [
+                'id' => 5,
+                'title' => 'Story of Seasons: Friends of Mineral Town',
+                'platform' => 'Multi-plataforma',
+                'genre' => 'Simulación',
                 'year' => 2020,
-                'description' => 'Zagreus intenta escapar del inframundo en este roguelike de combate dinámico.',
-                'rating' => 9.0
+                'description' => 'Revive la clásica historia de la granja Mineral Town. Cuida animales, cultiva tus campos y construye relaciones significativas.',
+                'rating' => 8.7,
+                'image' => 'story_of_seasons.jpg'
+            ],
+            [
+                'id' => 6,
+                'title' => 'Spiritfarer',
+                'platform' => 'Multi-plataforma',
+                'genre' => 'Simulación',
+                'year' => 2020,
+                'description' => 'Sé una espíritu-fará de la muerte gentil. Construye barcos, cuida animales y acompaña a las almas en su último viaje con ternura.',
+                'rating' => 8.9,
+                'image' => 'spiritfarer.jpg'
             ]
         ];
     }
@@ -57,4 +90,3 @@ class GameController extends Controller
         return view('games.show', ['game' => $game]);
     }
 }
-
