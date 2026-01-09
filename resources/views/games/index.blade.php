@@ -108,7 +108,9 @@
 <div class="games-grid">
     @foreach($games as $game)
     <div class="game-card">
+        <!-- Esta es la línea que falta en tu vista -->
         <img src="{{ asset('images/' . $game['image']) }}" alt="{{ $game['title'] }}" class="game-image">
+        
         <h2>{{ $game['title'] }}</h2>
         <p class="platform"><span class="heart-icon">💖</span> {{ $game['platform'] }} <span class="year-tag">{{ $game['year'] }}</span></p>
         <p class="genre">🎀 {{ $game['genre'] }}</p>
